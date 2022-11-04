@@ -146,6 +146,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -159,6 +160,42 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-iconl.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\check-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\no-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\admin-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\preferences-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Misc-Delete-Database-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Editing-Delete-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add-contact-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Slide-Show-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\secrecy-iconnn.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Add-Folder-icon.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -29,8 +29,14 @@ Persist Security Info=False;";
 
         private void button1_Click(object sender, EventArgs e)
         {
-            try
-            {
+            
+                try
+             {
+                if (textBox1.Text.Length == 0 || textBox7.Text.Length == 0)
+                {
+                    MessageBox.Show("Remplir le champs id user et password");
+                }
+
                 con.Open();
                 OleDbCommand cmd = new OleDbCommand();
                 cmd.Connection = con;

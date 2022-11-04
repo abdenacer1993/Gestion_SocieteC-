@@ -91,6 +91,12 @@ namespace pctls
         {
             
         }
-        
+
+        private void button4_Click_1(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
+        }
     }
 }

@@ -31,7 +31,7 @@ Persist Security Info=False;";
             con.Open();
             OleDbCommand cmd = new OleDbCommand();
             cmd.Connection = con;
-            cmd.CommandText = "select * from [user] where id_u='" + textBox1.Text + "' and pwd_u='" + textBox2.Text + "'";
+            cmd.CommandText = "select * from user where id_u='" + textBox1.Text + "' and pwd_u='" + textBox2.Text + "'";
             OleDbDataReader rd = cmd.ExecuteReader();
 
 
@@ -41,17 +41,18 @@ Persist Security Info=False;";
             {
                 count = count + 1;
             }
+
             if (count == 1)
             {
 
                 this.Hide();
-                Form7 f7 = new Form7();
-                f7.Show();
+                Form2 f2 = new Form2();
+                f2.Show();
 
             }
 
-            //if (count != 0)
-            else{
+            if (count != 1)
+            {
                 MessageBox.Show("Id or Password invalid");
             }
             con.Close();
@@ -61,6 +62,13 @@ Persist Security Info=False;";
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Form1 f1 = new Form1();
+            f1.Show();
         }
     }
 }

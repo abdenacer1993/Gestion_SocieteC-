@@ -50,14 +50,15 @@ Persist Security Info=False;";
             cmd.Connection = con;
             cmd.CommandText = "select * from admin where id_a='" + textBox1.Text + "' and pwd_a='" + textBox2.Text + "'";
             OleDbDataReader rd = cmd.ExecuteReader();
-            
+
 
             int count = 0;
-            
+
             while (rd.Read())
             {
                 count = count + 1;
             }
+
             if (count == 1)
             {
 
@@ -66,13 +67,13 @@ Persist Security Info=False;";
                 f2.Show();
 
             }
-            
-            if (count != 1 )
+
+            if (count != 1)
             {
                 MessageBox.Show("Id or Password invalid");
             }
             con.Close();
-            
+
         }
 
         private void connectUserToolStripMenuItem_Click(object sender, EventArgs e)

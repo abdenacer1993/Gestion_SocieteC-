@@ -35,7 +35,7 @@ Persist Security Info=False;";
                 OleDbCommand cmd = new OleDbCommand();
                 cmd.Connection = con;
                 String querry = "UPDATE [user] SET  id_a = '" + textBox2.Text + "' ,nom_u = '" + textBox3.Text + "' ,prenom_u = '" + textBox4.Text + "' ,tel_u = '" + textBox5.Text + "' ,email_u = '" + textBox6.Text + "' ,pwd_u = '" + textBox7.Text + "' WHERE id_u = '" + textBox1.Text + "' ";
-                MessageBox.Show(querry);
+                //MessageBox.Show(querry);
                 cmd.CommandText = querry;
 
                 cmd.ExecuteNonQuery();

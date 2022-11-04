@@ -23,6 +23,8 @@ Persist Security Info=False;";
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+            
             try
             {
                 con.Open();
@@ -78,6 +80,11 @@ Persist Security Info=False;";
             {
                 MessageBox.Show("Erreur" + ex);
             }
+        }
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 
